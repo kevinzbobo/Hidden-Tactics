@@ -1,0 +1,33 @@
+{
+  "Level": "1-2",
+  "Bg": "Background2",
+  "Music": "Music1",
+  "Monster": [
+    {
+      "Element": "Fire",
+      "Img": "map_gus_1-sheet0",
+      "Script": "Gus",
+      "Position": [
+        7.14,
+        -3.16
+      ],
+      "Scale": [
+        2.08,
+        2.08
+      ]
+    },
+    {
+      "Element": "Water",
+      "Img": "map_gus_2-sheet0",
+      "Script": "Gus",
+      "Position": [
+        5.08,
+        -1.93
+      ],
+      "Scale": [
+        3,
+        3
+      ]
+    }
+  ]
+}

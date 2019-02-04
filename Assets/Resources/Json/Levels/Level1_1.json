@@ -1,0 +1,35 @@
+{
+  "Name": "1-1",
+  "Level": 1,
+  "Mission": 1,
+  "BackgroundImage": "Background1",
+  "Music": "Music3",
+  "Monster": [
+    {
+      "Element": "Fire",
+      "Img": "map_crown-sheet1",
+      "Script": "Crown",
+      "Position": [
+        7.14,
+        -3.16
+      ],
+      "Scale": [
+        2.08,
+        2.08
+      ]
+    },
+    {
+      "Element": "Water",
+      "Img": "map_crown-sheet1",
+      "Script": "Crown",
+      "Position": [
+        5.08,
+        -1.93
+      ],
+      "Scale": [
+        3,
+        3
+      ]
+    }
+  ]
+}

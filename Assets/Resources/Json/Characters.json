@@ -1,0 +1,150 @@
+{
+  "Characters": [
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "Leslie"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "Leslie"
+          }
+        }
+      ],
+      "Image": "character_water",
+      "Element": "Water",
+      "MaxHp": 100,
+      "Power": 5,
+      "MaxPower": 10,
+      "PowerAdd": 1,
+      "DrawCount": 5,
+      "GroupId": 0,
+      "Heal": 0,
+      "Armor": 0,
+      "Defence": 0,
+      "ElementCards": [ 1, 2, 3, 4, 5, 6, 7, 8, 8 ],
+      "UltimateCards": [ 1 ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "Leslie"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "Leslie"
+          }
+        }
+      ],
+      "Image": "character_metal",
+      "Element": "Metal",
+      "MaxHp": 100,
+      "Power": 5,
+      "MaxPower": 10,
+      "PowerAdd": 1,
+      "DrawCount": 5,
+      "GroupId": 0,
+      "Heal": 0,
+      "Armor": 0,
+      "Defence": 0,
+      "ElementCards": [ 1, 2, 3, 4, 5, 6, 7, 8, 8 ],
+      "UltimateCards": [ 1 ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "Leslie"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "Leslie"
+          }
+        }
+      ],
+      "Image": "character_earth",
+      "Element": "Earth",
+      "MaxHp": 100,
+      "Power": 5,
+      "MaxPower": 10,
+      "PowerAdd": 1,
+      "DrawCount": 5,
+      "GroupId": 0,
+      "Heal": 0,
+      "Armor": 0,
+      "Defence": 0,
+      "ElementCards": [ 1, 2, 3, 4, 5, 6, 7, 8, 8 ],
+      "UltimateCards": [ 1 ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "Leslie"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "Leslie"
+          }
+        }
+      ],
+      "Image": "character_fire",
+      "Element": "Fire",
+      "MaxHp": 100,
+      "Power": 5,
+      "MaxPower": 10,
+      "PowerAdd": 1,
+      "DrawCount": 5,
+      "GroupId": 0,
+      "Heal": 0,
+      "Armor": 0,
+      "Defence": 0,
+      "ElementCards": [ 1, 2, 3, 4, 5, 6, 7, 8, 8 ],
+      "UltimateCards": [ 1 ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "Leslie"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "Leslie"
+          }
+        }
+      ],
+      "Image": "Player_Earth",
+      "Element": "Wood",
+      "MaxHp": 100,
+      "Power": 5,
+      "MaxPower": 10,
+      "PowerAdd": 1,
+      "DrawCount": 5,
+      "GroupId": 0,
+      "Heal": 0,
+      "Armor": 0,
+      "Defence": 0,
+      "ElementCards": [ 1, 2, 3, 4, 5, 6, 7, 8, 8 ],
+      "UltimateCards": [ 1 ]
+    }
+  ]
+  
+}

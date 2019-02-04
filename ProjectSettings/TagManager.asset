@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Background
+  - BgMusic
+  - Monster
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Card
+  - Monster
+  - Background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2394832355
+    locked: 0
+  - name: Player
+    uniqueID: 3463060839
+    locked: 0
+  - name: Monster
+    uniqueID: 2396500151
+    locked: 0
+  - name: Card
+    uniqueID: 305675811
+    locked: 0
+  - name: UI
+    uniqueID: 3612702509
+    locked: 0

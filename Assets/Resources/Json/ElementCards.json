@@ -1,0 +1,2579 @@
+{
+  "Cards": [
+    {
+      "ID": 1,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "根生土長",
+            "Description": "護甲+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "根生土長",
+            "Description": "護甲+3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAddition",
+          "Properties": [
+            {
+              "Key": "GeneralAddition",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 2,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 3,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "衝刺",
+            "Description": "單體傷害5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "衝刺",
+            "Description": "單體傷害5"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "泥漿",
+            "Description": "攻擊力-2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "泥漿",
+            "Description": "攻擊力-2"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackDownPerTurn",
+          "Properties": [
+            {
+              "Key": "GeneralDown",
+              "Value": 2
+            },
+            {
+              "Key": "OvercomingDown",
+              "Value": 2
+            },
+            {
+              "Key": "InteractingDown",
+              "Value": 2
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 5,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "火樹",
+            "Description": "3回合攻擊力+1"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "火樹",
+            "Description": "3回合攻擊力+1"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 1
+            },
+            {
+              "Key": "Turns",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 6,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 7,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "土擊",
+            "Description": "單體傷害2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "土擊",
+            "Description": "單體傷害2"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 8,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "火毒",
+            "Description": "一定機率陷入燃燒狀態（5回合開始傷害+1）"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "火毒",
+            "Description": "一定機率陷入燃燒狀態（5回合開始傷害+1）"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "RandomAddDamagePerTurn",
+          "Properties": [
+            {
+              "Key": "Probability",
+              "Value": 0.5
+            },
+            {
+              "Key": "GeneralDamage",
+              "Value": 1
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 1
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 1
+            },
+            {
+              "Key": "Turns",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 9,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "幸運星",
+            "Description": "1回合攻擊力+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "幸運星",
+            "Description": "1回合攻擊力+3"
+          }
+        }
+      ],
+      "Element": "Gold",
+      "Image": "g_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 3
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 10,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        }
+      ],
+      "Element": "Gold",
+      "Image": "g_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 11,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "火燒",
+            "Description": "單體傷害2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "火燒",
+            "Description": "單體傷害2"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 12,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "連刺",
+            "Description": "額外傷害+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "連刺",
+            "Description": "額外傷害+3"
+          }
+        }
+      ],
+      "Element": "Gold",
+      "Image": "g_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 3
+            },
+            {
+              "Key": "Turns",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 13,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "冰錐",
+            "Description": "生命力滿點，1回合攻擊力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "冰錐",
+            "Description": "生命力滿點，1回合攻擊力+5"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpUpIfFullHPPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 5
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 14,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 15,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "源源不絕",
+            "Description": "3回合生命力+2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "源源不絕",
+            "Description": "3回合生命力+2"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "HealingPerTurn",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 1
+            },
+            {
+              "Key": "Turns",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 16,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "水槍",
+            "Description": "單體傷害2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "水槍",
+            "Description": "單體傷害2"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_P_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 17,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "水咒",
+            "Description": "一定機率陷入詛咒狀態（2回合額外傷害+2）"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "水咒",
+            "Description": "一定機率陷入詛咒狀態（2回合額外傷害+2）"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "RandomAddDamageUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Probability",
+              "Value": 0.5
+            },
+            {
+              "Key": "Turns",
+              "Value": 2
+            },
+            {
+              "Key": "GeneralDamage",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 2
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 18,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "迴避",
+            "Description": "受到傷害-2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "迴避",
+            "Description": "受到傷害-2"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DefenceAddition",
+          "Properties": [
+            {
+              "Key": "GeneralDefence",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedDefence",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedDefence",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 19,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+3"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 5
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 20,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "木刺",
+            "Description": "單體傷害2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "木刺",
+            "Description": "單體傷害2"
+          }
+        }
+      ], 
+      "Element": "Wood",
+      "Image": "wd_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 21,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "寄生",
+            "Description": "3回合敵方護甲-2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "寄生",
+            "Description": "3回合敵方護甲-2"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 1,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorDropPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "GeneralDrop",
+              "Value": 2
+            },
+            {
+              "Key": "OvercomingDrop",
+              "Value": 2
+            },
+            {
+              "Key": "InteractingDrop",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 22,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "根生土長",
+            "Description": "護甲+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "根生土長",
+            "Description": "護甲+5"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAddition",
+          "Properties": [
+            {
+              "Key": "GeneralAddition",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 23,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "繕甲厲兵",
+            "Description": "護甲+3，3回合開始時護甲+1"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "繕甲厲兵",
+            "Description": "護甲+3，3回合開始時護甲+1"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAddition",
+          "Properties": [
+            {
+              "Key": "GeneralAddition",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 2
+            }
+          ]
+        },
+        {
+          "Name": "ArmorAdditionPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "GeneralAddition",
+              "Value": 1
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 1
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 24,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 25,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大土擊",
+            "Description": "單體傷害5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大土擊",
+            "Description": "單體傷害5"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 26,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大火燒",
+            "Description": "單體傷害5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大火燒",
+            "Description": "單體傷害5"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 27,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大泥漿",
+            "Description": "攻擊力-3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大泥漿",
+            "Description": "攻擊力-3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackDownPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "GeneralDown",
+              "Value": 3
+            },
+            {
+              "Key": "OvercomingDown",
+              "Value": 3
+            },
+            {
+              "Key": "InteractingDown",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 28,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "火樹銀花",
+            "Description": "3回合攻擊力+2"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "火樹銀花",
+            "Description": "3回合攻擊力+2"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "Up",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 29,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "趁火打劫",
+            "Description": "敵人狀態為燃燒時，攻擊力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "趁火打劫",
+            "Description": "敵人狀態為燃燒時，攻擊力+5"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpIfBuffExistPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "Up",
+              "Value": 5
+            },
+            {
+              "Key": "Buff",
+              "Value": "DamagePerTurn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 30,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 31,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大水槍",
+            "Description": "單體傷害5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大水槍",
+            "Description": "單體傷害5"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 32,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大木刺",
+            "Description": "單體傷害5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大木刺",
+            "Description": "單體傷害5"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 33,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大火毒",
+            "Description": "一定機率陷入燃燒狀態（5回合開始傷害+2）"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大火毒",
+            "Description": "一定機率陷入燃燒狀態（5回合開始傷害+2）"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "RandomAddDamagePerTurn",
+          "Properties": [
+            {
+              "Key": "Probability",
+              "Value": 0.5
+            },
+            {
+              "Key": "GeneralDamage",
+              "Value": 2
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 1
+            },
+            {
+              "Key": "Turns",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 34,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "戰吼",
+            "Description": "1回合攻擊力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "戰吼",
+            "Description": "1回合攻擊力+5"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 5
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 35,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "以牙還牙",
+            "Description": "生命力-5，1回合攻擊力+10"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "以牙還牙",
+            "Description": "生命力-5，1回合攻擊力+10"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "HPDrop",
+          "Properties": [
+            {
+              "Key": "GeneralDrop",
+              "Value": -5
+            },
+            {
+              "Key": "BoostedDrop",
+              "Value": -5
+            },
+            {
+              "Key": "SuppressedDrop",
+              "Value": -5
+            }
+          ]
+        },
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 10
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 36,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 37,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大衝刺",
+            "Description": "單體傷害+10"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大衝刺",
+            "Description": "單體傷害+10"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 12
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 38,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大殺四方",
+            "Description": "全體受到傷害+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大殺四方",
+            "Description": "全體受到傷害+5"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": true,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 39,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大連刺",
+            "Description": "額外傷害+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大連刺",
+            "Description": "額外傷害+5"
+          }
+        }
+      ],
+      "Element": "Metal",
+      "Image": "g_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DamageUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "GeneralExtraDamage",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedExtraDamage",
+              "Value": 5
+            },
+            {
+              "Key": "SuppressedExtraDamage",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 40,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大冰錐",
+            "Description": "生命力滿點，1回合攻擊力+10"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大冰錐",
+            "Description": "生命力滿點，1回合攻擊力+10"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpUpIfFullHPPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 10
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 41,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "水盾",
+            "Description": "溢出生命力轉化成護甲"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "水盾",
+            "Description": "溢出生命力轉化成護甲"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "HealingArmorPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 42,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+10"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+10"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 11
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 43,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "土循",
+            "Description": "全體受到傷害+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "土循",
+            "Description": "全體受到傷害+3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": true,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 44,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "泛濫",
+            "Description": "全體受到傷害+3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "泛濫",
+            "Description": "全體受到傷害+3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "l_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": true,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 45,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大水咒",
+            "Description": "一定機率陷入詛咒狀態（2回合額外傷害+3）"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大水咒",
+            "Description": "一定機率陷入詛咒狀態（2回合額外傷害+3）"
+          }
+        }
+      ],
+      "Element": "Water",
+      "Image": "w_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": true,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "RandomAddDamagePerTurn",
+          "Properties": [
+            {
+              "Key": "Probability",
+              "Value": 0.5
+            },
+            {
+              "Key": "Turns",
+              "Value": 2
+            },
+            {
+              "Key": "GeneralDamage",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 46,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大迴避",
+            "Description": "受到傷害-5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大迴避",
+            "Description": "受到傷害-5"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DefenceAddition",
+          "Properties": [
+            {
+              "Key": "GeneralDefence",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedDefence",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedDefence",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 47,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "侵蝕",
+            "Description": "1回合攻擊，無視5點護甲值"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "侵蝕",
+            "Description": "1回合攻擊，無視5點護甲值"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackIgnoreArmorPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "Ignore",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 48,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "生命泉源",
+            "Description": "生命力+5"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Healing",
+          "Properties": [
+            {
+              "Key": "GeneralHealing",
+              "Value": 5
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 6
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 49,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "木循",
+            "Description": "全體受到傷害3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "木循",
+            "Description": "全體受到傷害3"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "wd_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": true,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 50,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "連環火",
+            "Description": "全體受到傷害3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "連環火",
+            "Description": "全體受到傷害3"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "Image": "f_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": true,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 51,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "大寄生",
+            "Description": "3回合減護甲-3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "大寄生",
+            "Description": "3回合減護甲-3"
+          }
+        }
+      ],
+      "Element": "Wood",
+      "Image": "w_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 2,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorDropPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "GeneralDrop",
+              "Value": 3
+            },
+            {
+              "Key": "OvercomingDrop",
+              "Value": 3
+            },
+            {
+              "Key": "InteractingDrop",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 52,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "盾牌猛擊",
+            "Description": "擊暈敵人單體1回合，護甲-5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "盾牌猛擊",
+            "Description": "擊暈敵人單體1回合，護甲-5"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "i_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 3,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorDrop",
+          "Properties": [
+            {
+              "Key": "GeneralDrop",
+              "Value": 5
+            },
+            {
+              "Key": "OvercomingDrop",
+              "Value": 5
+            },
+            {
+              "Key": "InteractingDrop",
+              "Value": 5
+            }
+          ]
+        },
+        {
+          "Name": "SkipTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 53,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "飛土逐害",
+            "Description": "消耗所有護甲，造成消耗護甲數量的傷害"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "飛土逐害",
+            "Description": "消耗所有護甲，造成消耗護甲數量的傷害"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "i_P_BG",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "Cost": 3,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackByArmor",
+          "Properties": []
+        },
+        {
+          "Name": "ArmorSet",
+          "Properties": [
+            {
+              "Key": "Value",
+              "Value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 54,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "土甲",
+            "Description": "護甲+10，生命力-3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "土甲",
+            "Description": "護甲+10，生命力-3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "i_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 3,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAddition",
+          "Properties": [
+            {
+              "Key": "GeneralAddition",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 11
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 9
+            }
+          ]
+        },
+        {
+          "Name": "HPDrop",
+          "Properties": [
+            {
+              "Key": "GeneralDrop",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedDrop",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedDrop",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 55,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "卷土重來",
+            "Description": "3回合結束時護甲+10，攻擊力減半"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "卷土重來",
+            "Description": "3回合結束時護甲+10，攻擊力減半"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "i_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 3,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAdditionPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "GeneralAddition",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 10
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 10
+            }
+          ]
+        },
+        {
+          "Name": "AttackMultiplicationPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "Ratio",
+              "Value": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 56,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "土甲",
+            "Description": "護甲+10，生命力-3"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "土甲",
+            "Description": "護甲+10，生命力-3"
+          }
+        }
+      ],
+      "Element": "Earth",
+      "Image": "i_N_BG",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "Cost": 3,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAddition",
+          "Properties": [
+            {
+              "Key": "GeneralAddition",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 11
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 9
+            }
+          ]
+        },
+        {
+          "Name": "HPDrop",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 3
+            },
+            {
+              "Key": "GeneralDrop",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedDrop",
+              "Value": 10
+            },
+            {
+              "Key": "SuppressedDrop",
+              "Value": 10
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "Cards": [
+    {
+      "ID": 0,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "無動作",
+            "Description": "無動作"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "無動作",
+            "Description": "無動作"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+      ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "火屬性普攻",
+            "Description": "普攻"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "火屬性普攻",
+            "Description": "普攻"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "Attack",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 8
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 8
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 8
+            }
+          ]
+        }
+      ]
+    },{
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "炎火之觸",
+            "Description": "火神的攻擊附帶灼燒效果,造成每回合4點傷害,持續3回合"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "炎火之觸",
+            "Description": "火神的攻擊附帶灼燒效果,造成每回合4點傷害,持續3回合"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "IsAgainstEnemy": true,
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DamagePerTurn",
+          "Properties": [
+            {
+              "Key": "GeneralDamage",
+              "Value": 4
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 4
+            },
+            {
+              "Key": "Turns",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "真火",
+            "Description": "无视任何防御效果,造成20点伤害"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "真火",
+            "Description": "无视任何防御效果,造成20点伤害"
+          }
+        }
+      ],
+      "Element": "Fire",
+      "IsAgainstEnemy": false,
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackDirect",
+          "Properties": [
+            {
+              "Key": "BasicAttack",
+              "Value": 20
+            },
+            {
+              "Key": "BoostedAttack",
+              "Value": 20
+            },
+            {
+              "Key": "SuppressedAttack",
+              "Value": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

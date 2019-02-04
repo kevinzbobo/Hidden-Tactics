@@ -1,0 +1,234 @@
+{
+  "Monsters": [
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "炮灰"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "炮灰"
+          }
+        }
+      ],
+      "Img": "monster_solder",
+      "Element": "Fire",
+      "Scale": 1.0,
+      "HealthPoint": 100,
+      "Strategy": {
+        "Name": "IAIRandomStrategy",
+        "Properties": [
+          {
+            "Key": "Command",
+            "Value": "0"
+          }
+        ]
+      },
+      "MonsterCards": [
+        {
+          "locales": [
+            {
+              "language": "en-GB",
+              "data": {
+                "Title": "火屬性普攻",
+                "Description": "普攻"
+              }
+            },
+            {
+              "language": "zh-tw",
+              "data": {
+                "Title": "火屬性普攻",
+                "Description": "普攻"
+              }
+            }
+          ],
+          "Element": "Fire",
+          "IsAgainstEnemy": true,
+          "IsAOE": false,
+          "PlayerEffects": [],
+          "TargetEffects": [
+            {
+              "Name": "Attack",
+              "Properties": [
+                {
+                  "Key": "BasicAttack",
+                  "Value": 2
+                },
+                {
+                  "Key": "BoostedAttack",
+                  "Value": 2
+                },
+                {
+                  "Key": "SuppressedAttack",
+                  "Value": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Name": "祝融"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Name": "祝融"
+          }
+        }
+      ],
+      "Img": "monter_boss_fire",
+      "Element": "Fire",
+      "Scale": 2.5,
+      "HealthPoint": 100,
+      "Strategy": {
+        "Name": "IAIRandomStrategy",
+        "Properties": [
+          {
+            "Key": "Command",
+            "Value": "0.7,0.2,0.1"
+          }
+        ]
+       },
+      "MonsterCards": [
+        {
+          "locales": [
+            {
+              "language": "en-GB",
+              "data": {
+                "Title": "火屬性普攻",
+                "Description": "普攻"
+              }
+            },
+            {
+              "language": "zh-tw",
+              "data": {
+                "Title": "火屬性普攻",
+                "Description": "普攻"
+              }
+            }
+          ],
+          "Element": "Fire",
+          "IsAgainstEnemy": true,
+          "IsAOE": false,
+          "PlayerEffects": [],
+          "TargetEffects": [
+            {
+              "Name": "Attack",
+              "Properties": [
+                {
+                  "Key": "BasicAttack",
+                  "Value": 8
+                },
+                {
+                  "Key": "BoostedAttack",
+                  "Value": 8
+                },
+                {
+                  "Key": "SuppressedAttack",
+                  "Value": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locales": [
+            {
+              "language": "en-GB",
+              "data": {
+                "Title": "炎火之觸",
+                "Description": "火神的攻擊附帶灼燒效果,造成每回合4點傷害,持續3回合"
+              }
+            },
+            {
+              "language": "zh-tw",
+              "data": {
+                "Title": "炎火之觸",
+                "Description": "火神的攻擊附帶灼燒效果,造成每回合4點傷害,持續3回合"
+              }
+            }
+          ],
+          "Element": "Fire",
+          "IsAgainstEnemy": true,
+          "IsAOE": false,
+          "PlayerEffects": [],
+          "TargetEffects": [
+            {
+              "Name": "DamagePerTurn",
+              "Properties": [
+                {
+                  "Key": "GeneralDamage",
+                  "Value": 4
+                },
+                {
+                  "Key": "BoostedDamage",
+                  "Value": 4
+                },
+                {
+                  "Key": "SuppressedDamage",
+                  "Value": 4
+                },
+                {
+                  "Key": "Turns",
+                  "Value": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locales": [
+            {
+              "language": "en-GB",
+              "data": {
+                "Title": "真火",
+                "Description": "无视任何防御效果,造成20点伤害"
+              }
+            },
+            {
+              "language": "zh-tw",
+              "data": {
+                "Title": "真火",
+                "Description": "无视任何防御效果,造成20点伤害"
+              }
+            }
+          ],
+          "Element": "Fire",
+          "IsAgainstEnemy": true,
+          "IsAOE": false,
+          "PlayerEffects": [],
+          "TargetEffects": [
+            {
+              "Name": "AttackDirect",
+              "Properties": [
+                {
+                  "Key": "BasicAttack",
+                  "Value": 20
+                },
+                {
+                  "Key": "BoostedAttack",
+                  "Value": 20
+                },
+                {
+                  "Key": "SuppressedAttack",
+                  "Value": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ] 
+}
