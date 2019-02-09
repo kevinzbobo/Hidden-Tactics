@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8833108610221078200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 55, y: 55, z: 1}
   m_Children:
   - {fileID: 8833108610864529159}
   m_Father: {fileID: 0}
@@ -59,7 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8843ef6dd71fba04d804f4195994f8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ComboCard: {fileID: 8833108610864529156}
+  ComboCard: {fileID: 6260856396050343868, guid: aac0649635a31344882a56abe524b384,
+    type: 3}
 --- !u!114 &284554710002882603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +87,7 @@ GameObject:
   - component: {fileID: 8833108610341759054}
   - component: {fileID: 8833108610341759055}
   - component: {fileID: 8833108610341759052}
+  - component: {fileID: 1758652249001331311}
   m_Layer: 0
   m_Name: ComboImg
   m_TagString: Untagged
@@ -188,9 +190,34 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8833108610341759055}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1758652249001331311}
+        m_MethodName: ComboButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1758652249001331311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833108610341759050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8843ef6dd71fba04d804f4195994f8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ComboCard: {fileID: 6260856396050343868, guid: aac0649635a31344882a56abe524b384,
+    type: 3}
 --- !u!1 &8833108610826098723
 GameObject:
   m_ObjectHideFlags: 0

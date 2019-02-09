@@ -18,6 +18,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "l_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -68,6 +69,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "l_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -131,6 +133,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "g_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": true,
@@ -181,6 +184,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "f_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": true,
@@ -237,6 +241,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "w_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -295,6 +300,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "w_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -345,6 +351,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "w_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -399,6 +406,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "w_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -458,6 +466,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "w_N_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -508,6 +517,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "f_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": true,
@@ -579,6 +589,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "f_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -629,6 +640,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "f_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": true,
@@ -687,6 +699,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "f_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -737,6 +750,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "f_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": false,
@@ -800,6 +814,7 @@
           }
         }
       ],
+      "Postpone": 0,
       "Image": "l_P_BG",
       "Icon": "icon_ultimate_gold",
       "IsAgainstEnemy": true,

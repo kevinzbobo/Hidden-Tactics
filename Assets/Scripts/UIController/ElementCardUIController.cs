@@ -11,6 +11,7 @@ public class ElementCardUIController : MonoBehaviour, OnPropertyChangeListener<s
     // UI
     public GameObject CardFront;
     public GameObject CardBack;
+    public GameObject HightImg;
     public Text Star;
     public Text Title;
     public Text Description;
@@ -166,5 +167,10 @@ public class ElementCardUIController : MonoBehaviour, OnPropertyChangeListener<s
             EventManager.TriggerEvent(BattleManager.PLAY_ELEMENT_CARD, cardEvent);
         }
 
+    }
+
+    public void HighLightCard (bool flag)
+    {
+        HightImg.SetActive(flag);
     }
 }

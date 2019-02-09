@@ -16,14 +16,19 @@ public class ComboCardCol : MonoBehaviour
     {
         
     }
-
-    private void OnMouseEnter()
+    public void ComboButtonClick()
     {
         ComboCard.SetActive(true);
     }
 
-    private void OnMouseExit()
+    public void ComboCardClose()
     {
         ComboCard.SetActive(false);
+    }
+
+    public void ComboCardPolymery()
+    {
+        ComboCard.SetActive(false);
+        Debug.Log("play combo");
     }
 }

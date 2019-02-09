@@ -20,4 +20,12 @@ public class MonsterCardInstance : Card
             }
         }
     }
+
+    public int Postpone
+    {
+        get
+        {
+            return _monsterCardProperties.Postpone;
+        }
+    }
 }

@@ -8,6 +8,7 @@ public class EnemyInstance : Actor {
     private ListenableList<MonsterCardInstance> _cards; //playable card list
     private ListenableList<MonsterCardInstance> _cardQueue; //pending card list
     private IAIStrategy _strategy;
+    private int _postpone = 0;
 
     public EnemyInstance(MonsterModel model) : base(model.HealthPoint, 0, 0, model.Img, model.Element)
     {
@@ -49,6 +50,12 @@ public class EnemyInstance : Actor {
     {
         base.StartTurn(mgr);
 
+        if (this._postpone > 0)
+        {
+            this._postpone -= 1;
+            return;
+        }
+
         // get Card
         MonsterCardInstance card = null;
         // try to get card from queue
@@ -60,6 +67,14 @@ public class EnemyInstance : Actor {
         {
             // try to get card from strategy
             card = this._strategy.RunStrategy(this, mgr);
+
+            //postpone card
+            if (card.Postpone > 0)
+            {
+                _postpone += card.Postpone;
+                _cardQueue.AddItem(card);
+                return;
+            }
         }
 
         if (null != card)

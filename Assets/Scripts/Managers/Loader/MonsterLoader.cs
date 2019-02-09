@@ -69,5 +69,6 @@ public struct JMonsterCardProperties
     public bool IsAOE;
     public JClassInfo[] PlayerEffects;
     public JClassInfo[] TargetEffects;
+    public int Postpone;
 }
 
