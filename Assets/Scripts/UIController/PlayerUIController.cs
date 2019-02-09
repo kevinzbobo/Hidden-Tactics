@@ -25,6 +25,13 @@ public class PlayerUIController : MonoBehaviour, OnPropertyChangeListener<int>, 
     public GameObject AttackGroup;
     public Text Attack;
 
+    public PlayerInstance PlayerInstance
+    {
+        get
+        {
+            return _player;
+        }
+    }
     public void Start()
     {
         // Register messages

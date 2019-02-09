@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 public class DraggableTestWithActions : MonoBehaviour {
 
     public bool UsePointerDisplacement = true;
@@ -17,6 +17,9 @@ public class DraggableTestWithActions : MonoBehaviour {
     // distance from camera to mouse on Z axis 
     private float zDisplacement;
 
+    //col gameobject
+    private GameObject colObj;
+
     // MONOBEHAVIOUR METHODS
     void Awake()
     {
@@ -28,6 +31,7 @@ public class DraggableTestWithActions : MonoBehaviour {
         if (da.CanDrag)
         {
             dragging = true;
+            HoverPreview.PreviewsAllowed = false;
             da.OnStartDrag();
             zDisplacement = -Camera.main.transform.position.z + transform.position.z;
             if (UsePointerDisplacement)
@@ -51,12 +55,45 @@ public class DraggableTestWithActions : MonoBehaviour {
 
     void OnMouseUp()
     {
+        //check col gameobject
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits = Physics.RaycastAll(ray);
+        for (int i= 0; i < hits.Length; i++)
+        {
+            Debug.Log(hits[i].collider.name);
+            if (hits[i].collider.tag == "Player" || hits[i].collider.tag == "Monster")
+            {
+                colObj = hits[i].collider.gameObject;
+            }
+        }
+
+        //play effect
+        if (colObj)
+        {
+            ElementCardPlayEvent playEvent = new ElementCardPlayEvent();
+            playEvent.Card = this.GetComponent<ElementCardUIController>().GetCardInstance();
+            Actor[] targetList = new Actor[1];
+            if (colObj.tag == "Monster")
+            {
+                targetList[0] = colObj.GetComponent<MonsterUIController>().EnemyInstance;
+            }
+            if (colObj.tag == "Player")
+            {
+                targetList[0] = colObj.GetComponent<PlayerUIController>().PlayerInstance;
+            }
+            playEvent.Targets = targetList;
+            EventManager.TriggerEvent("PLAY_ELEMENT_CARD", playEvent);
+        }
+        
         if (dragging)
         {
             dragging = false;
+            HoverPreview.PreviewsAllowed = true;
+            colObj = null;
             da.OnEndDrag();
         }
-    }   
+    }
+
 
     // returns mouse position in World coordinates for our GameObject to follow. 
     private Vector3 MouseInWorldCoords()

@@ -17,7 +17,7 @@ public class PlayerGroupController : MonoBehaviour
 
         GameObject newPlayer = Instantiate(playerPrefab, transform.position, transform.localRotation) as GameObject;
         newPlayer.transform.SetParent(this.transform);
-        newPlayer.transform.localScale = new Vector3(Scale, Scale, Scale);
+        newPlayer.transform.localScale = new Vector3(Scale, Scale, 1);
         PlayerUIController cardController = newPlayer.GetComponent<PlayerUIController>();
         cardController.Bind(player);
 
