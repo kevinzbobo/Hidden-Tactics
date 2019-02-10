@@ -12,6 +12,7 @@ public class BattleContext {
     public PlayerInstance Player; //Player
     public ListenableList<EnemyInstance> EnemyList; //Enemy list
     public List<UltimateCardInstance> UltimateCards;
+    public ListenableList<ElementCardInstance> HightLightCardsList; //highligt card list
 
     public void PrintData()
     {

@@ -20,6 +20,7 @@ public class DraggableTestWithActions : MonoBehaviour {
     //col gameobject
     private GameObject colObj;
 
+
     // MONOBEHAVIOUR METHODS
     void Awake()
     {
@@ -28,7 +29,8 @@ public class DraggableTestWithActions : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (da.CanDrag)
+        //when combocard is active, can not drag
+        if (da.CanDrag && PlayerPrefs.GetInt("ComboCardPanelState") == 0)
         {
             dragging = true;
             HoverPreview.PreviewsAllowed = false;

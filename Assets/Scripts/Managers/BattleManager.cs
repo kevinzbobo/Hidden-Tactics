@@ -11,7 +11,6 @@ public class BattleManager
     public const string PLAY_ELEMENT_CARD = "PLAY_ELEMENT_CARD";
     public const string PLAY_ULTIMATE_CARD = "PLAY_ULTIMATE_CARD";
     public const string GAME_OVER = "GAME_OVER";
-
     // Context
     private BattleContext _battleContext;
 
@@ -26,6 +25,7 @@ public class BattleManager
         _battleContext.EnemyList = new ListenableList<EnemyInstance>();
         _battleContext.ActorList = new ListenableList<Actor>();
         _battleContext.CurrentActor = new ListenableProperty<Actor>(null);
+        _battleContext.HightLightCardsList = new ListenableList<ElementCardInstance>();
 
         // Load Characters
         _battleContext.Player = context.Player;
@@ -48,7 +48,7 @@ public class BattleManager
 
         // Initialization
         _battleContext.TurnNumber = 0;
-
+        
         // Start
         StartTurn();
     }
@@ -77,6 +77,7 @@ public class BattleManager
         endTurnController.Bind(_battleContext.CurrentActor);
 
         // Binding Ultimate Cards
+        comboBtnGpController.HideAll();
         for (int cnt = 0; cnt < _battleContext.UltimateCards.Count; cnt++)
         {
             comboBtnGpController.BindUltimateCard(cnt, _battleContext.UltimateCards[cnt]);
@@ -284,6 +285,7 @@ public class BattleManager
             this._battleContext.EnemyList = null;
             this._battleContext.Player = null;
             this._battleContext = null;
+            this._battleContext.HightLightCardsList = null;
         }
 
         EventManager.StopListening(END_TURN, EndTurn);

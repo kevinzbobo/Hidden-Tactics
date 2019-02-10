@@ -255,6 +255,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 55
       objectReference: {fileID: 0}
+    - target: {fileID: 284554710002882603, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 1021791106}
+    - target: {fileID: 8833108610221078202, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1a94ff51e1db4558a6fcc09a39b367d, type: 3}
 --- !u!4 &146056095 stripped
@@ -516,6 +526,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 55
       objectReference: {fileID: 0}
+    - target: {fileID: 284554710002882603, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 1021791106}
+    - target: {fileID: 8833108610221078202, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1a94ff51e1db4558a6fcc09a39b367d, type: 3}
 --- !u!4 &337067981 stripped
@@ -612,6 +632,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 284554710002882603, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 1021791106}
+    - target: {fileID: 8833108610221078202, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1a94ff51e1db4558a6fcc09a39b367d, type: 3}
@@ -749,6 +779,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 284554710002882603, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 1021791106}
+    - target: {fileID: 8833108610221078202, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1a94ff51e1db4558a6fcc09a39b367d, type: 3}
@@ -1132,11 +1172,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 284554710002882603, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 1021791106}
     - target: {fileID: 8833108610221078202, guid: b1a94ff51e1db4558a6fcc09a39b367d,
         type: 3}
       propertyPath: ComboCard
       value: 
       objectReference: {fileID: 1021791104}
+    - target: {fileID: 8833108610221078202, guid: b1a94ff51e1db4558a6fcc09a39b367d,
+        type: 3}
+      propertyPath: ComboCardUIController
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1758652249001331311, guid: b1a94ff51e1db4558a6fcc09a39b367d,
         type: 3}
       propertyPath: ComboCard
@@ -1224,6 +1274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ComboCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260856396050343868, guid: aac0649635a31344882a56abe524b384,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6260856396050343869, guid: aac0649635a31344882a56abe524b384,
         type: 3}
@@ -1444,6 +1499,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 890597354}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1021791106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3737822720519037180, guid: aac0649635a31344882a56abe524b384,
+    type: 3}
+  m_PrefabInstance: {fileID: 890597354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021791104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413dd153f9a7b4ed0b72669ad9b1e832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1071306747
 GameObject:
   m_ObjectHideFlags: 0

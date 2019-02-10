@@ -169,8 +169,29 @@ public class ElementCardUIController : MonoBehaviour, OnPropertyChangeListener<s
 
     }
 
-    public void HighLightCard (bool flag)
+    //public void HighLightCard ()
+    //{
+        
+    //    HightImg.SetActive(true);
+    //}
+
+    void OnMouseDown()
     {
-        HightImg.SetActive(flag);
+        if (PlayerPrefs.GetInt("ComboCardPanelState") == 1)
+        {
+            if (HightImg.activeSelf == false)
+            {
+                GameObject[] highLight = GameObject.FindGameObjectsWithTag("CardHighlight");
+                if (highLight.Length < 2)
+                {
+                    HightImg.SetActive(true);
+                }                
+            }
+            else if (HightImg.activeSelf == true)
+            {
+                HightImg.SetActive(false);
+            }
+        }
     }
+        
 }

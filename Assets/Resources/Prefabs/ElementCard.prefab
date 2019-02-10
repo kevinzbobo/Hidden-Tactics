@@ -1211,7 +1211,7 @@ GameObject:
   - component: {fileID: 554056892187520088}
   m_Layer: 9
   m_Name: GlowImage
-  m_TagString: Untagged
+  m_TagString: CardHighlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1979,7 +1979,7 @@ GameObject:
   - component: {fileID: 7976581754832482141}
   m_Layer: 9
   m_Name: ElementCard
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -37,6 +37,9 @@ public class SceneManage : MonoBehaviour
         SearchViews();
         LoadLevel(leveldata);
 
+        //init the combocardPanel State,0 inactive, 1 active
+        PlayerPrefs.SetInt("ComboCardPanelState",0);
+
         Debug.Log("Screen Width : " + Screen.width);
     }
 

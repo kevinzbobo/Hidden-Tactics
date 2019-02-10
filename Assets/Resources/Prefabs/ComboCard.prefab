@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1025029410}
   - component: {fileID: 1025029409}
   - component: {fileID: 1025029408}
-  - component: {fileID: 1025029411}
   m_Layer: 0
   m_Name: Polymerization
   m_TagString: Untagged
@@ -117,7 +116,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025029411}
+      - m_Target: {fileID: 3737822720519037180}
         m_MethodName: ComboCardPolymery
         m_Mode: 1
         m_Arguments:
@@ -130,19 +129,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1025029411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025029406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8843ef6dd71fba04d804f4195994f8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ComboCard: {fileID: 6260856396050343868}
 --- !u!1 &1291300803
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +220,6 @@ GameObject:
   - component: {fileID: 1644922105}
   - component: {fileID: 1644922104}
   - component: {fileID: 1644922103}
-  - component: {fileID: 1644922106}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -339,8 +324,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1644922106}
-        m_MethodName: ComboCardClose
+      - m_Target: {fileID: 3737822720519037180}
+        m_MethodName: Cancel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -352,19 +337,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1644922106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644922101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8843ef6dd71fba04d804f4195994f8fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ComboCard: {fileID: 6260856396050343868}
 --- !u!1 &1890123855
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6260856396050343869}
+  - component: {fileID: 3737822720519037180}
   m_Layer: 0
   m_Name: ComboCard
   m_TagString: Untagged
@@ -475,6 +448,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3737822720519037180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260856396050343868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413dd153f9a7b4ed0b72669ad9b1e832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardBody: {fileID: 6260856396780344902}
+  CombineButton: {fileID: 1025029406}
+  CancelButton: {fileID: 1644922101}
 --- !u!1 &6260856396347046982
 GameObject:
   m_ObjectHideFlags: 0

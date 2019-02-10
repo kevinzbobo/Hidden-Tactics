@@ -11,6 +11,12 @@ public class ComboButtonController : MonoBehaviour
 
     public Image Icon;
     public Image Element;
+    public ComboCardUIController ComboCardUIController;
+
+    public void SetVisible(bool isVisible)
+    {
+        gameObject.SetActive(isVisible);
+    }
 
     public void Bind(UltimateCardInstance card)
     {
@@ -46,6 +52,16 @@ public class ComboButtonController : MonoBehaviour
         }
     }
 
+    public UltimateCardInstance GetCardInstance()
+    {
+        return this._ultimateCard;
+    }
 
+    public void ComboButtonClick()
+    {
+        ComboCardUIController.Bind(_ultimateCard);
+        PlayerPrefs.SetInt("ComboCardPanelState", 1);
+        ComboCardUIController.SetVisible(true);
+    }
 
 }
