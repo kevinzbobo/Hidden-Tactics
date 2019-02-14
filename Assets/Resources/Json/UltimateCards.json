@@ -24,12 +24,12 @@
       "IsAgainstEnemy": false,
       "Element": "Metal",
       "LeftCard": {
-        "Element": "Wood",
+        "Element": "Fire",
         "Cost": 0,
         "IsAgainEnemy": false
       },
       "RighrtCard": {
-        "Element": "Metal",
+        "Element": "Earth",
         "Cost": 0,
         "IsAgainEnemy": true
       },

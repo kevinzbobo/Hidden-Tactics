@@ -67,12 +67,15 @@ public class EnemyInstance : Actor {
             // try to get card from strategy
             card = this._strategy.RunStrategy(this, mgr);
 
-            //postpone card
-            if (card.Postpone > 0)
+            if (null != card)
             {
-                _postpone += card.Postpone;
-                _cardQueue.AddItem(card);
-                return;
+                //postpone card
+                if (card.Postpone > 0)
+                {
+                    _postpone += card.Postpone;
+                    _cardQueue.AddItem(card);
+                    return;
+                }
             }
         }
 

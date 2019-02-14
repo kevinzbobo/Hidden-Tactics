@@ -12,6 +12,7 @@ public class ComboButtonController : MonoBehaviour
     public Image Icon;
     public Image Element;
     public ComboCardUIController ComboCardUIController;
+    public ComboPaneUIController ComboPaneUIController;
 
     public void SetVisible(bool isVisible)
     {
@@ -61,7 +62,9 @@ public class ComboButtonController : MonoBehaviour
     {
         ComboCardUIController.Bind(_ultimateCard);
         PlayerPrefs.SetInt("ComboCardPanelState", 1);
-        ComboCardUIController.SetVisible(true);
+        ComboPaneUIController.SetVisible(true);
+        ComboCardUIController.SetVisible(true);        
+        HoverPreview.PreviewsAllowed = false;
     }
 
 }

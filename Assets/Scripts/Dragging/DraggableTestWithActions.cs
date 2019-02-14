@@ -20,6 +20,19 @@ public class DraggableTestWithActions : MonoBehaviour {
     //col gameobject
     private GameObject colObj;
 
+    //col gameobject type monster:1 player:2 combinecard:3 none:99
+    private int coltype=99;
+
+    //CardPrefab
+    public GameObject CardPrefab;
+
+    private Vector3 CobineLeftPos = new Vector3(255,290,0);
+    private Vector3 CobineRightPos = new Vector3(508, 290, 0);
+    private float CardScale = 41.0f;
+
+    //combineCard
+    private GameObject CombineCardLeft;
+    private GameObject CombineCardRight;
 
     // MONOBEHAVIOUR METHODS
     void Awake()
@@ -30,7 +43,7 @@ public class DraggableTestWithActions : MonoBehaviour {
     void OnMouseDown()
     {
         //when combocard is active, can not drag
-        if (da.CanDrag && PlayerPrefs.GetInt("ComboCardPanelState") == 0)
+        if (da.CanDrag)
         {
             dragging = true;
             HoverPreview.PreviewsAllowed = false;
@@ -63,14 +76,63 @@ public class DraggableTestWithActions : MonoBehaviour {
         for (int i= 0; i < hits.Length; i++)
         {
             Debug.Log(hits[i].collider.name);
-            if (hits[i].collider.tag == "Player" || hits[i].collider.tag == "Monster")
+            if (hits[i].collider.tag == "CombineCard")
             {
                 colObj = hits[i].collider.gameObject;
+                coltype = 3;
+                break;
+            }
+            if (hits[i].collider.tag == "Monster")
+            {
+                colObj = hits[i].collider.gameObject;
+                coltype = 1;
+                break;
+            }
+            if (hits[i].collider.tag == "Player" )
+            {
+                colObj = hits[i].collider.gameObject;
+                coltype = 2;
+                break;
             }
         }
 
-        //play effect
-        if (colObj)
+       
+        //if is combinecard
+        if (coltype == 3)
+        {
+            ElementCardInstance card = this.GetComponent<ElementCardUIController>().GetCardInstance();
+
+            //at the combineCard position instantiate this card
+            Vector3 pos = new Vector3();
+            
+
+            if (colObj.name == "CombineCardRight")
+            {
+                if (GameObject.Find("CombineCardRight").transform.childCount > 0)
+                {
+                    ElementCardInstance tempInstance = GameObject.Find("CombineCardRight").transform.GetChild(0).GetComponent<ElementCardUIController>().GetCardInstance();
+                    DataManager.Instance.BattleContext.Player.HandheldSet.AddItem(tempInstance);
+                    Destroy(GameObject.Find("CombineCardRight").transform.GetChild(0).gameObject);
+                }
+                pos = CobineRightPos;
+                OnItemCard(card, pos);
+            }
+            else
+            {
+                if (GameObject.Find("CombineCardLeft").transform.childCount > 0)
+                {
+                    ElementCardInstance tempInstance = GameObject.Find("CombineCardLeft").transform.GetChild(0).GetComponent<ElementCardUIController>().GetCardInstance();
+                    DataManager.Instance.BattleContext.Player.HandheldSet.AddItem(tempInstance);
+                    Destroy(GameObject.Find("CombineCardLeft").transform.GetChild(0).gameObject);
+                }
+                pos = CobineLeftPos;
+                OnItemCard(card, pos);
+            }
+            
+        }
+
+        //if is player or monster, play effect
+        if (coltype < 3 && PlayerPrefs.GetInt("ComboCardPanelState") != 1)
         {
             ElementCardPlayEvent playEvent = new ElementCardPlayEvent();
             playEvent.Card = this.GetComponent<ElementCardUIController>().GetCardInstance();
@@ -86,16 +148,28 @@ public class DraggableTestWithActions : MonoBehaviour {
             playEvent.Targets = targetList;
             EventManager.TriggerEvent("PLAY_ELEMENT_CARD", playEvent);
         }
+
         
         if (dragging)
         {
             dragging = false;
             HoverPreview.PreviewsAllowed = true;
             colObj = null;
+            coltype = 99;
             da.OnEndDrag();
         }
     }
 
+
+    private void OnItemCard(ElementCardInstance card, Vector3 pos)
+    {
+        GameObject newCard = Instantiate(CardPrefab, pos, colObj.transform.localRotation) as GameObject;
+        newCard.transform.localScale = new Vector3(CardScale, CardScale, 1);
+        newCard.transform.SetParent(colObj.transform);
+        ElementCardUIController controller = newCard.GetComponent<ElementCardUIController>();
+        controller.Bind(card);
+        DataManager.Instance.BattleContext.Player.HandheldSet.RemoveItem(card);
+    }
 
     // returns mouse position in World coordinates for our GameObject to follow. 
     private Vector3 MouseInWorldCoords()

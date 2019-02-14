@@ -9,6 +9,8 @@ TagManager:
   - Monster
   - CardHighlight
   - Card
+  - CombineCard
+  - Mask
   layers:
   - Default
   - TransparentFX
@@ -55,9 +57,9 @@ TagManager:
   - name: Monster
     uniqueID: 2396500151
     locked: 0
-  - name: Card
-    uniqueID: 305675811
-    locked: 0
   - name: UI
     uniqueID: 3612702509
+    locked: 0
+  - name: Card
+    uniqueID: 305675811
     locked: 0

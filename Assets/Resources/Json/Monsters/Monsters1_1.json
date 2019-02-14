@@ -46,6 +46,7 @@
               }
             }
           ],
+          "Postpone": 0,
           "Element": "Fire",
           "IsAgainstEnemy": true,
           "IsAOE": false,
@@ -118,6 +119,7 @@
               }
             }
           ],
+          "Postpone": 0,
           "Element": "Fire",
           "IsAgainstEnemy": true,
           "IsAOE": false,
@@ -159,6 +161,7 @@
               }
             }
           ],
+          "Postpone": 0,
           "Element": "Fire",
           "IsAgainstEnemy": true,
           "IsAOE": false,
@@ -204,6 +207,7 @@
               }
             }
           ],
+          "Postpone": 0,
           "Element": "Fire",
           "IsAgainstEnemy": true,
           "IsAOE": false,

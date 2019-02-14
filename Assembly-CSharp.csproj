@@ -149,6 +149,7 @@
     <Compile Include="Assets\Scripts\UIController\ComboButtonController.cs" />
     <Compile Include="Assets\Scripts\UIController\ComboButtonGroupController.cs" />
     <Compile Include="Assets\Scripts\UIController\ComboCardUIController.cs" />
+    <Compile Include="Assets\Scripts\UIController\ComboPaneUIController.cs" />
     <Compile Include="Assets\Scripts\UIController\ElementCardUIController.cs" />
     <Compile Include="Assets\Scripts\UIController\EndTurnUIController.cs" />
     <Compile Include="Assets\Scripts\UIController\EnemyGroupController.cs" />

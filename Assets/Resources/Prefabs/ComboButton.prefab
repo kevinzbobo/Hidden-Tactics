@@ -60,7 +60,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 8833108610341759055}
   Element: {fileID: 8833108610826098725}
-  ComboCardUIController: {fileID: 0}
+  ComboCardUIController: {fileID: 3737822720519037180, guid: aac0649635a31344882a56abe524b384,
+    type: 3}
+  ComboPaneUIController: {fileID: 505736173788943298, guid: 1ef20f80a72bf3645ad48e66a53211b3,
+    type: 3}
 --- !u!1 &8833108610341759050
 GameObject:
   m_ObjectHideFlags: 0

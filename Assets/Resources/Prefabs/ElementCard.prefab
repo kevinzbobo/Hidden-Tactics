@@ -2043,6 +2043,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UsePointerDisplacement: 1
+  CardPrefab: {fileID: 3061286047825440698}
+  CobineRightPos: {fileID: 0}
+  CobineLeftPos: {fileID: 0}
 --- !u!114 &3061286047825440690
 MonoBehaviour:
   m_ObjectHideFlags: 0
