@@ -10,6 +10,7 @@ public class BattleContext {
     public ListenableList<Actor> ActorList; //All actors
 
     public PlayerInstance Player; //Player
+    public ListenableProperty<UltimateCardInstance> UltimateCard; // playing effect ultimatecard
     public ListenableList<EnemyInstance> EnemyList; //Enemy list
     public List<UltimateCardInstance> UltimateCards;
     public ListenableList<ElementCardInstance> HightLightCardsList; //highligt card list

@@ -29,6 +29,9 @@ public class ComboButtonController : MonoBehaviour
             Icon.sprite = cardIcon;
         }
 
+        Debug.Log("card info left: " + card.LeftCard.Element);
+        Debug.Log("card info right: " + card.RightCard.Element);
+
         Sprite elementIcon = null;
         if (card.Element.Equals(Constants.ElementNameFire))
         {
@@ -47,10 +50,10 @@ public class ComboButtonController : MonoBehaviour
             elementIcon = Resources.Load<Sprite>(Constants.UltimateCardElementImagePath + Path.DirectorySeparatorChar + "ultimate_card_gold");
         }
 
-        if (null != elementIcon)
-        {
-            Element.sprite = elementIcon;
-        }
+        //if (null != elementIcon)
+        //{
+        //    Element.sprite = elementIcon;
+        //}
     }
 
     public UltimateCardInstance GetCardInstance()
@@ -60,6 +63,7 @@ public class ComboButtonController : MonoBehaviour
 
     public void ComboButtonClick()
     {
+        Debug.Log("123");
         ComboCardUIController.Bind(_ultimateCard);
         PlayerPrefs.SetInt("ComboCardPanelState", 1);
         ComboPaneUIController.SetVisible(true);

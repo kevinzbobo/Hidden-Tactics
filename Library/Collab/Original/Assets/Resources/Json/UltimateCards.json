@@ -1,0 +1,851 @@
+{
+  "Cards": [
+    {
+      "ID": 1,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "福星贵人",
+            "Description": "1回合所有攻擊必定暴擊(200%傷害)"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "福星贵人",
+            "Description": "1回合所有攻擊必定暴擊(200%傷害)"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "l_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Metal",
+      "LeftCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackMultiplicationPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "Ratio",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 2,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "金神",
+            "Description": "生命值-20，造成單體20%的最大生命值傷害"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "金神",
+            "Description": "生命值-20，造成單體20%的最大生命值傷害"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "l_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Metal",
+      "LeftCard": {
+        "Element": "Wood",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Metal",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "HPDrop",
+          "Properties": [
+            {
+              "Key": "GeneralDrop",
+              "Value": 20
+            },
+            {
+              "Key": "BoostedDrop",
+              "Value": 20
+            },
+            {
+              "Key": "SuppressedDrop",
+              "Value": 20
+            }
+          ]
+        },
+        {
+          "Name": "AttackByMaxHP",
+          "Properties": [
+            {
+              "Key": "Ratio",
+              "Value": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 3,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "羊刃",
+            "Description": "手上持有n張金屬性卡牌，立即造成n*5的傷害"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "羊刃",
+            "Description": "手上持有n張金屬性卡牌，立即造成n*5的傷害"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "g_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": true,
+      "Element": "Metal",
+      "LeftCard": {
+        "Element": "Wood",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Metal",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackByNumOfCard",
+          "Properties": [
+            {
+              "Key": "Element",
+              "Value": "Metal"
+            },
+            {
+              "Key": "Attack",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "天罗地网",
+            "Description": "放棄手所有卡牌，造成單體1回合晕眩效果(停止1回合)與傷害+5"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "天罗地网",
+            "Description": "放棄手所有卡牌，造成單體1回合晕眩效果(停止1回合)與傷害+5"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "f_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": true,
+      "Element": "Fire",
+      "LeftCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Water",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [
+        {
+          "Name": "CardDrop",
+          "Properties": [
+            {
+              "Key": "Count",
+              "Value": -1
+            }
+          ]
+        }
+      ],
+      "TargetEffects": [
+        {
+          "Name": "SkipTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 5,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "福星贵人",
+            "Description": "生命值-5，完美迴避攻擊一次"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "福星贵人",
+            "Description": "生命值-5，完美迴避攻擊一次"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "w_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Wood",
+      "LeftCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Water",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "HPDrop",
+          "Properties": [
+            {
+              "Key": "GeneralDrop",
+              "Value": 20
+            },
+            {
+              "Key": "BoostedDrop",
+              "Value": 20
+            },
+            {
+              "Key": "SuppressedDrop",
+              "Value": 20
+            }
+          ]
+        },
+        {
+          "Name": "AttackDodge",
+          "Properties": []
+        }
+      ]
+    },
+    {
+      "ID": 6,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "魁罡贵人",
+            "Description": "虛弱效果，自身受到傷害-10"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "魁罡贵人",
+            "Description": "虛弱效果，自身受到傷害-10"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "w_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Wood",
+      "LeftCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Water",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DamageDownPerTurn",
+          "Properties": [
+            {
+              "Key": "Down",
+              "Value": 10
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 7,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "天德贵人",
+            "Description": "回复最大生命值10%，溢出的生命值變為護甲"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "天德贵人",
+            "Description": "回复最大生命值10%，溢出的生命值變為護甲"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "w_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Metal",
+      "LeftCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "HealingPercentageArmor",
+          "Properties": [
+            {
+              "Key": "GeneralRatio",
+              "Value": 0.1
+            },
+            {
+              "Key": "BoostedHealing",
+              "Value": 0.1
+            },
+            {
+              "Key": "SuppressedHealing",
+              "Value": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 8,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "文昌贵人",
+            "Description": "本回合敵方無法對自己產生增益效果，且施加攻擊的20%會反彈自身"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "文昌贵人",
+            "Description": "本回合敵方無法對自己產生增益效果，且施加攻擊的20%會反彈自身"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "w_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Water",
+      "LeftCard": {
+        "Element": "Metal",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "PostitiveBuffOnly",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        },
+        {
+          "Name": "DamageReboundPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "Ratio",
+              "Value": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 9,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "月德贵人",
+            "Description": "生命值隨機+10-30"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "月德贵人",
+            "Description": "生命值隨機+10-30"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "w_N_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Metal",
+      "LeftCard": {
+        "Element": "Metal",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Fire",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "RandomHealing",
+          "Properties": [
+            {
+              "Key": "From",
+              "Value": 10
+            },
+            {
+              "Key": "From",
+              "Value": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 10,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "将星",
+            "Description": "5回合全體敵人傷害3，若有敵方單位處於燃燒狀態，則眩暈敵方一個回合"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "将星",
+            "Description": "5回合全體敵人傷害3，若有敵方單位處於燃燒狀態，則眩暈敵方一個回合"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "f_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": true,
+      "Element": "Fire",
+      "LeftCard": {
+        "Element": "Water",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": true,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "SkipTurnIfBuffExists",
+          "Properties": [
+            {
+              "Key": "Buff",
+              "Value": "FirePoison"
+            },
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        },
+        {
+          "Name": "DamagePerTurn",
+          "Properties": [
+            {
+              "Key": "GeneralDamage",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 4
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 2
+            },
+            {
+              "Key": "Turns",
+              "Value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 11,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "孤鸾煞",
+            "Description": "本回合每一張攻擊卡牌都會额外附带3点伤害，持续3回合"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "孤鸾煞",
+            "Description": "本回合每一張攻擊卡牌都會额外附带3点伤害，持续3回合"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "f_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Fire",
+      "LeftCard": {
+        "Element": "Water",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackUpPerTurn",
+          "Properties": [
+            {
+              "Key": "Up",
+              "Value": 3
+            },
+            {
+              "Key": "Turns",
+              "Value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 12,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "驿马",
+            "Description": "每回合对场上全體敵人傷害+3，直至戰鬥結束"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "驿马",
+            "Description": "每回合对场上全體敵人傷害+3，直至戰鬥結束"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "f_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": true,
+      "Element": "Fire",
+      "LeftCard": {
+        "Element": "Water",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": true,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DamagePerTurn",
+          "Properties": [
+            {
+              "Key": "GeneralDamage",
+              "Value": 3
+            },
+            {
+              "Key": "BoostedDamage",
+              "Value": 3
+            },
+            {
+              "Key": "SuppressedDamage",
+              "Value": 3
+            },
+            {
+              "Key": "Turns",
+              "Value": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 13,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "华盖",
+            "Description": "將遭受傷害的70%反彈給敵方單位"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "华盖",
+            "Description": "將遭受傷害的70%反彈給敵方單位"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "f_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Earth",
+      "LeftCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Wood",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "DamageReboundPerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            },
+            {
+              "Key": "Ratio",
+              "Value": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 14,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "亡神",
+            "Description": "獲得10點護甲，本回合雙法無法進行攻擊行為"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "亡神",
+            "Description": "獲得10點護甲，本回合雙法無法進行攻擊行為"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "f_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": false,
+      "Element": "Earth",
+      "LeftCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Wood",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": true,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "ArmorAddition",
+          "Properties": [
+            {
+              "Key": "GeneralAddition",
+              "Value": 10
+            },
+            {
+              "Key": "BoostedAddition",
+              "Value": 10
+            },
+            {
+              "Key": "SuppressedAddition",
+              "Value": 10
+            }
+          ]
+        },
+        {
+          "Name": "AttackDisablePerTurn",
+          "Properties": [
+            {
+              "Key": "Turns",
+              "Value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 15,
+      "locales": [
+        {
+          "language": "en-GB",
+          "data": {
+            "Title": "禄神",
+            "Description": "消耗全部護甲，造成等額的傷害量"
+          }
+        },
+        {
+          "language": "zh-tw",
+          "data": {
+            "Title": "禄神",
+            "Description": "消耗全部護甲，造成等額的傷害量"
+          }
+        }
+      ],
+      "Postpone": 0,
+      "Image": "l_P_BG",
+      "Icon": "icon_ultimate_gold",
+      "IsAgainstEnemy": true,
+      "Element": "Earth",
+      "LeftCard": {
+        "Element": "Earth",
+        "Cost": 0,
+        "IsAgainEnemy": false
+      },
+      "RighrtCard": {
+        "Element": "Wood",
+        "Cost": 0,
+        "IsAgainEnemy": true
+      },
+      "IsAOE": false,
+      "PlayerEffects": [],
+      "TargetEffects": [
+        {
+          "Name": "AttackByArmor",
+          "Properties": []
+        },
+        {
+          "Name": "ArmorSet",
+          "Properties": [
+            {
+              "Key": "Value",
+              "Value": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

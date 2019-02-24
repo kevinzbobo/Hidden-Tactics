@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CursorsAndCrosshairs\CursorChanger.cs" />
     <Compile Include="Assets\Scripts\Actors\ActionInfo.cs" />
     <Compile Include="Assets\Scripts\Actors\Actor.cs" />
     <Compile Include="Assets\Scripts\Actors\EnemyInstance.cs" />
@@ -140,12 +141,14 @@
     <Compile Include="Assets\Scripts\Managers\Loader\CharacterLoader.cs" />
     <Compile Include="Assets\Scripts\Managers\Loader\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\Managers\Loader\MonsterLoader.cs" />
+    <Compile Include="Assets\Scripts\Managers\Loader\ToolLoader.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneManage.cs" />
     <Compile Include="Assets\Scripts\MonsterAI\Crown.cs" />
     <Compile Include="Assets\Scripts\MonsterAI\Gus.cs" />
     <Compile Include="Assets\Scripts\MonsterAI\Strategies\IAIRandomStrategy.cs" />
     <Compile Include="Assets\Scripts\MonsterAI\Strategies\IAISequenceStrategy.cs" />
     <Compile Include="Assets\Scripts\MonsterAI\Strategies\IAIStrategy.cs" />
+    <Compile Include="Assets\Scripts\Tool\Tool.cs" />
     <Compile Include="Assets\Scripts\UIController\ComboButtonController.cs" />
     <Compile Include="Assets\Scripts\UIController\ComboButtonGroupController.cs" />
     <Compile Include="Assets\Scripts\UIController\ComboCardUIController.cs" />

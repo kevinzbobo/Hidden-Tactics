@@ -133,20 +133,20 @@ public class DraggableTestWithActions : MonoBehaviour {
 
         //if is player or monster, play effect
         if (coltype < 3 && PlayerPrefs.GetInt("ComboCardPanelState") != 1)
-        {
-            ElementCardPlayEvent playEvent = new ElementCardPlayEvent();
-            playEvent.Card = this.GetComponent<ElementCardUIController>().GetCardInstance();
-            Actor[] targetList = new Actor[1];
-            if (colObj.tag == "Monster")
-            {
-                targetList[0] = colObj.GetComponent<MonsterUIController>().EnemyInstance;
-            }
-            if (colObj.tag == "Player")
-            {
-                targetList[0] = colObj.GetComponent<PlayerUIController>().PlayerInstance;
-            }
-            playEvent.Targets = targetList;
-            EventManager.TriggerEvent("PLAY_ELEMENT_CARD", playEvent);
+        {          
+                ElementCardPlayEvent playEvent = new ElementCardPlayEvent();
+                playEvent.Card = this.GetComponent<ElementCardUIController>().GetCardInstance();
+                Actor[] targetList = new Actor[1];
+                if (colObj.tag == "Monster")
+                {
+                    targetList[0] = colObj.GetComponent<MonsterUIController>().EnemyInstance;
+                }
+                if (colObj.tag == "Player")
+                {
+                    targetList[0] = colObj.GetComponent<PlayerUIController>().PlayerInstance;
+                }
+                playEvent.Targets = targetList;
+                EventManager.TriggerEvent(BattleManager.PLAY_ELEMENT_CARD, playEvent);         
         }
 
         

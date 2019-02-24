@@ -9,7 +9,7 @@ public class ComboPaneUIController : MonoBehaviour
 
     public GameObject CombineCardRight;
     public GameObject CombineCardLeft;
-
+    public Texture2D TargetCurse;
     private UltimateCardInstance ultimate;
 
     public void setUltimateCardInstance(UltimateCardInstance _ultimate)
@@ -68,12 +68,14 @@ public class ComboPaneUIController : MonoBehaviour
             if (ultimate.IsCardPlayable(leftElement, rightElement))
             {
 
-
                 Destroy(CombineCardRight.transform.GetChild(0).gameObject);
                 Destroy(CombineCardLeft.transform.GetChild(0).gameObject);
                 PlayerPrefs.SetInt("ComboCardPanelState", 0);
+                DataManager.Instance.BattleContext.UltimateCard.Property = ultimate;
+                comboCardUIController.SetVisible(false);
                 this.SetVisible(false);
                 HoverPreview.PreviewsAllowed = true;
+                Cursor.SetCursor(TargetCurse,Vector2.zero, CursorMode.Auto);
             }
         }
 
@@ -87,45 +89,7 @@ public class ComboPaneUIController : MonoBehaviour
                 DataManager.Instance.BattleContext.Player.HandheldSet.RemoveItem(card);
             }
         }
-        
-        //逻辑待会补，待续
-
-        //BattleContext context = DataManager.Instance.BattleContext;
-        //if (null != context)
-        //{
-        //    UltimateCardPlayEvent cardEvent = new UltimateCardPlayEvent();
-
-        //    cardEvent.Card = _ultimateCard;
-        //    cardEvent.Targets = null;
-
-        //    bool isPlayable = false;
-        //    ListenableList<ElementCardInstance> handHeldSet = context.Player.HandheldSet;
-        //    int totalCnt = handHeldSet.GetCount();
-        //    for (int i = 0; i < totalCnt; i++)
-        //    {
-        //        for (int j = 0; j < totalCnt; j++)
-        //        {
-
-        //            Debug.Log(_ultimateCard.Description);
-        //            if (_ultimateCard.IsCardPlayable(handHeldSet.Get(i), handHeldSet.Get(j)))
-        //            {
-        //                isPlayable = true;
-        //                cardEvent.LeftCard = handHeldSet.Get(i);
-        //                cardEvent.RightCard = handHeldSet.Get(j);
-        //                EventManager.TriggerEvent(BattleManager.PLAY_ULTIMATE_CARD, cardEvent);
-        //                break;
-        //            }
-        //            else if (_ultimateCard.IsCardPlayable(handHeldSet.Get(j), handHeldSet.Get(i)))
-        //            {
-        //                isPlayable = true;
-        //                cardEvent.LeftCard = handHeldSet.Get(j);
-        //                cardEvent.RightCard = handHeldSet.Get(i);
-        //                EventManager.TriggerEvent(BattleManager.PLAY_ULTIMATE_CARD, cardEvent);
-        //                break;
-        //            }
-        //        }
-        //    }
-        //}
+       
     }
 
 

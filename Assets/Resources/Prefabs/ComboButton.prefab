@@ -42,10 +42,10 @@ BoxCollider:
   m_GameObject: {fileID: 8833108610221078200}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.1367469, y: 1.127742, z: 1}
-  m_Center: {x: 0.15531945, y: 0.0086199045, z: 0}
+  m_Size: {x: 0.6908297, y: 0.67123353, z: 1}
+  m_Center: {x: 0.33094704, y: 0.16483597, z: 0}
 --- !u!114 &284554710002882603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,10 +60,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 8833108610341759055}
   Element: {fileID: 8833108610826098725}
-  ComboCardUIController: {fileID: 3737822720519037180, guid: aac0649635a31344882a56abe524b384,
-    type: 3}
-  ComboPaneUIController: {fileID: 505736173788943298, guid: 1ef20f80a72bf3645ad48e66a53211b3,
-    type: 3}
+  ComboCardUIController: {fileID: 0}
+  ComboPaneUIController: {fileID: 0}
 --- !u!1 &8833108610341759050
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,14 +91,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8833108610826098722}
   m_Father: {fileID: 8833108610864529159}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20427562, y: 0.18410416}
   m_AnchorMax: {x: 0.93200004, y: 0.9114847}
-  m_AnchoredPosition: {x: -0.2770691, y: -0.4065628}
-  m_SizeDelta: {x: -0.113226175, y: -0.06008315}
+  m_AnchoredPosition: {x: 40, y: 28.921}
+  m_SizeDelta: {x: -140.8, y: -140.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8833108610341759054
 CanvasRenderer:
@@ -130,7 +129,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e93cf2ed6fa6f458f91cbd4343b05574, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60441d4619c8b6048a4237d862ae13a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -221,13 +220,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8833108610864529159}
-  m_RootOrder: 1
+  m_Father: {fileID: 8833108610341759053}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15559444, y: 0.6676967}
-  m_AnchorMax: {x: 0.49054128, y: 1}
-  m_AnchoredPosition: {x: 0.087646484, y: 0.024291992}
-  m_SizeDelta: {x: -0.094390035, y: 0.2559499}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -7.9, y: 0}
+  m_SizeDelta: {x: 140.15, y: 178.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8833108610826098724
 CanvasRenderer:
@@ -257,7 +256,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4d655f41e79324130be02d31f0934f62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4003aab5e9080324da50630b13684692, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -297,7 +296,6 @@ RectTransform:
   m_LocalScale: {x: 0.005, y: 0.005, z: 1}
   m_Children:
   - {fileID: 8833108610341759053}
-  - {fileID: 8833108610826098722}
   m_Father: {fileID: 8833108610221078203}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

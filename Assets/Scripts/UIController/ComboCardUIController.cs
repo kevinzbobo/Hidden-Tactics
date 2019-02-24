@@ -14,6 +14,7 @@ public class ComboCardUIController : MonoBehaviour
 
     public void Bind(UltimateCardInstance card)
     {
+        Debug.Log("Bind");
         this._ultimateCard = card;
 
         Sprite cardImage = Resources.Load<Sprite>(Constants.UltimateCardIconPath + Path.DirectorySeparatorChar + this._ultimateCard.Image);
@@ -32,6 +33,8 @@ public class ComboCardUIController : MonoBehaviour
     {
         this.transform.gameObject.SetActive(isVisible);
         ComboPanel.GetComponent<ComboPaneUIController>().setUltimateCardInstance(GetCardInstance());
+        Debug.Log(_ultimateCard.LeftCard.Element);
+        Debug.Log(_ultimateCard.RightCard.Element);
     }
 
     public UltimateCardInstance GetCardInstance()

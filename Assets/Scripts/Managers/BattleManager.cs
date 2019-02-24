@@ -11,8 +11,11 @@ public class BattleManager
     public const string PLAY_ELEMENT_CARD = "PLAY_ELEMENT_CARD";
     public const string PLAY_ULTIMATE_CARD = "PLAY_ULTIMATE_CARD";
     public const string GAME_OVER = "GAME_OVER";
+    public const string GAME_WIN = "GAME_WIN";
     // Context
     private BattleContext _battleContext;
+
+    private List<BattleEventListener> _battleEventListener = new List<BattleEventListener>();
 
     // Testing
     public void Initialize(LevelContext context)
@@ -25,6 +28,7 @@ public class BattleManager
         _battleContext.EnemyList = new ListenableList<EnemyInstance>();
         _battleContext.ActorList = new ListenableList<Actor>();
         _battleContext.CurrentActor = new ListenableProperty<Actor>(null);
+        _battleContext.UltimateCard = new ListenableProperty<UltimateCardInstance>(null);
         _battleContext.HightLightCardsList = new ListenableList<ElementCardInstance>();
 
         // Load Characters
@@ -47,8 +51,8 @@ public class BattleManager
         RegisterEvent();
 
         // Initialization
-        _battleContext.TurnNumber = 0;
-        
+        _battleContext.TurnNumber = 0;        
+
         // Start
         StartTurn();
     }
@@ -186,11 +190,34 @@ public class BattleManager
             }
         }
 
-        // check battle ended
+        // check battle ended (lost)
         if (_battleContext.Player.HealthPoint.Property <= 0)
         {
             // game over
             EventManager.TriggerEvent(GAME_OVER);
+
+            List<BattleEventListener> listenerList = new List<BattleEventListener>();
+            listenerList.AddRange(this._battleEventListener);
+            foreach (BattleEventListener listener in listenerList)
+            {
+                listener.OnGameLost();
+            }
+
+            return true;
+        }
+
+        // check game ended (win)
+        if (0 == _battleContext.EnemyList.GetCount())
+        {
+            EventManager.TriggerEvent(GAME_WIN);
+
+            List<BattleEventListener> listenerList = new List<BattleEventListener>();
+            listenerList.AddRange(this._battleEventListener);
+            foreach (BattleEventListener listener in listenerList)
+            {
+                listener.OnGameWin();
+            }
+
             return true;
         }
 
@@ -292,6 +319,23 @@ public class BattleManager
         EventManager.StopListening(PLAY_ELEMENT_CARD, OnElementCardPlayed);
         EventManager.StopListening(PLAY_ULTIMATE_CARD, OnUltimateCardPlayed);
     }
+
+    public void AddBattleEventListener(BattleEventListener listener)
+    {
+        this._battleEventListener.Add(listener);
+    }
+
+    public void RemoveBattleEventListener(BattleEventListener listener)
+    {
+        this._battleEventListener.Remove(listener);
+    }
+}
+
+
+public interface BattleEventListener
+{
+    void OnGameLost();
+    void OnGameWin();
 }
 
 

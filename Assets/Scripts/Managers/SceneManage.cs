@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using System;
 
-public class SceneManage : MonoBehaviour
+public class SceneManage : MonoBehaviour, BattleEventListener
 {
 
     //Level data
@@ -86,6 +86,7 @@ public class SceneManage : MonoBehaviour
 
         _battleManager = new BattleManager();
         _battleManager.Initialize(CreateContext(leveldata));
+        _battleManager.AddBattleEventListener(this);
     }
 
     private LevelContext CreateContext(LevelData leveldata)
@@ -141,6 +142,19 @@ public class SceneManage : MonoBehaviour
         }
     }
 
+    public void OnGameLost()
+    {
+        // get rewards
+        LevelReward reward = _leveldata.Reward;
+        // not implemented yet
+       //DataManager.Instance.LevelContext.Money += reward.Money;
+
+    }
+
+    public void OnGameWin()
+    {
+
+    }
 }
 
 

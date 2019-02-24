@@ -39,4 +39,19 @@ public struct LevelData
     public string BackgroundImage;
     public string Music;
     public List<MonsterModel> Monster;
+    public LevelReward Reward;
+}
+
+[Serializable]
+public struct LevelReward
+{
+    public int Money;
+    public List<ToolReward> Tools;
+}
+
+[Serializable]
+public struct ToolReward
+{
+    public int Id;
+    public float Probability;
 }

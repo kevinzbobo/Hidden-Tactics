@@ -168,4 +168,21 @@ public class PlayerUIController : MonoBehaviour, OnPropertyChangeListener<int>, 
         SetBuffCnt(_player.BuffList.GetCount());
     }
 
+    public void OnMouseDown()
+    {
+        UltimateCardInstance ultimate = DataManager.Instance.BattleContext.UltimateCard.Property;
+
+        //play ultimate card effect
+        if (ultimate != null)
+        {
+            UltimateCardPlayEvent cardEvent = new UltimateCardPlayEvent();
+            cardEvent.Card = ultimate;
+            Actor[] targetList = new Actor[1];
+            targetList[0] = PlayerInstance;
+            cardEvent.Targets = targetList;
+            EventManager.TriggerEvent(BattleManager.PLAY_ULTIMATE_CARD, cardEvent);
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            DataManager.Instance.BattleContext.UltimateCard.Property = null;
+        }
+    }
 }

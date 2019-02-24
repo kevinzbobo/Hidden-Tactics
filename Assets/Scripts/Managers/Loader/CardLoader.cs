@@ -44,7 +44,7 @@ public class CardLoader
     {
         //讀取所有卡組
         List<UltimateCardInstance> userCardList = new List<UltimateCardInstance>();
-        string path = Application.dataPath + Constants.CardJsonPath;
+        string path = Application.dataPath + Constants.UltimateCardJsonPath;
         if (File.Exists(path))
         {
             JUltimateCardListRoot cardSet = JsonUtility.FromJson<JUltimateCardListRoot>(File.ReadAllText(path));

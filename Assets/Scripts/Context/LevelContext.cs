@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelContext
 {
+
+    private int _money;
     private LevelData _levelData;
     private List<EnemyInstance> _enemyList = new List<EnemyInstance>();
     private PlayerInstance _player;
@@ -55,6 +57,18 @@ public class LevelContext
         set
         {
             this._levelData = value;
+        }
+    }
+
+    public int Money
+    {
+        get
+        {
+            return _money;
+        }
+        set
+        {
+            this._money = value;
         }
     }
 
